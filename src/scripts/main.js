@@ -22,11 +22,12 @@ function printMessage(message) {
   document.body.appendChild(div);
 }
 
-// 🟢 Tutaj ich faktycznie używasz:
+// 🟢 Elementy formularza
 const loginField = document.getElementById('login');
 const passwordField = document.getElementById('password');
 const button = document.getElementById('submit');
 
+// 🟢 Obsługa zdarzeń (po jednym raz)
 waitFor(loginField, 'click').then(printMessage);
 waitFor(passwordField, 'click').then(printMessage);
 waitFor(button, 'click').then(printMessage);
